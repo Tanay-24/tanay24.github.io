@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p><strong>Associated with:</strong> University of Mumbai</p>
                     <p>The Asa No Nettowaku application is an advanced and informative tool helping users stay updated with news and articles from around the world. Users can change the app's theme and switch languages (Marathi, English, Japanese, Hindi, Gujarati, Malayalam).</p>
                     <div id="modalImages">
-                        <img src="file:///F:/Tanay HDD/Mi D disk/My work/TYCS/Sem5 Project/Welcome Page.jpg" alt="Welcome Page">
+                        <img src="./images/Welcome Page.jpg" alt="Welcome Page">
                         <img src="file:///F:/Tanay HDD/Mi D disk/My work/TYCS/Sem5 Project/registration.jpg" alt="Registration">
                         <img src="file:///F:/Tanay HDD/Mi D disk/My work/TYCS/Sem5 Project/News Interface.jpg" alt="News Interface">
                         <img src="file:///F:/Tanay HDD/Mi D disk/My work/TYCS/Sem5 Project/Marathi Language Interface.jpg" alt="Marathi Language Interface">
