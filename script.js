@@ -39,11 +39,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p><strong>Associated with:</strong> University of Mumbai</p>
                     <p>This advanced mobile application, developed in Java and XML with Firebase for data storage, helps users stay informed about news, articles, and interesting events around the world. Users can customize the app's theme and switch between multiple languages, including Marathi, English, Japanese, Hindi, Gujarati, and Malayalam.</p>
                     <div id="modalImages">
-                        <img src="./images/Welcome Page.jpg" alt="Welcome Page">
-                        <img src="./images/Registration.jpg" alt="Registration">
-                        <img src="./images/News Interface.jpg" alt="News Interface">
-                        <img src="./images/Marathi Language Interface.jpg" alt="Marathi Language Interface">
-                        <img src="./images/Light Theme Interface.jpg" alt="Light Theme Interface">
+                        <img src="./images/Welcome Page.jpeg" alt="Welcome Page">
+                        <img src="./images/Registration.jpeg" alt="Registration">
+                        <img src="./images/News Interface.jpeg" alt="News Interface">
+                        <img src="./images/Marathi Language Interface.jpeg" alt="Marathi Language Interface">
+                        <img src="./images/Light Theme Interface.jpeg" alt="Light Theme Interface">
                     </div>
                 `;
             } else if (projectName === "FleetFusion") {
@@ -53,18 +53,18 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p><strong>Associated with:</strong> Savitribai Phule Pune University</p>
                     <p>This web application, built using HTML, CSS, and JavaScript with MySQL for data storage, aims to improve operational efficiency, reduce costs, and enhance customer satisfaction for businesses and logistics providers. By automating vehicle management, order processing, and notifications, it addresses the inefficiencies of manual documentation and record-keeping.</p>
                     <div id="modalImages">
-                        <img src="./images/1 imp.jpg">
-                        <img src="./images/2.jpg">
-                        <img src="./images/Provider Login imp.jpg">
-                        <img src="./images/4.jpg">
-                        <img src="./images/4A.jpg">
-                        <img src="./images/6B imp.jpg">
-                        <img src="./images/User Login imp.jpg">
-                        <img src="./images/8.jpg">
-                        <img src="./images/8A.jpg">
-                        <img src="./images/8B.jpg">
-                        <img src="./images/8C.jpg">
-                        <img src="./images/8D.jpg">
+                        <img src="./images/1 imp.jpeg">
+                        <img src="./images/2.jpeg">
+                        <img src="./images/Provider Login imp.jpeg">
+                        <img src="./images/4.jpeg">
+                        <img src="./images/4A.jpeg">
+                        <img src="./images/6B imp.jpeg">
+                        <img src="./images/User Login imp.jpeg">
+                        <img src="./images/8.jpeg">
+                        <img src="./images/8A.jpeg">
+                        <img src="./images/8B.jpeg">
+                        <img src="./images/8C.jpeg">
+                        <img src="./images/8D.jpeg">
                     </div>
                 `;
             } else if (projectName === "Smart City Hub - Nashik") {
@@ -87,14 +87,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p><strong>Duration:</strong> Jan 2023 - Apr 2023</p>
                     <p>Developed as a Windows application, this efficient ticket booking system allows users to view train, bus, and flight timetables and book tickets easily. It features a user-friendly interface that simplifies the booking process, while travel and transport company admins can register their companies with ease.</p>
                     <div id="modalImages">
-                        <img src="./images/Welcome page (2).jpg" >
-                        <img src="./images/Choose Login.jpg" >
-                        <img src="./images/Admin Register.jpg" >
-                        <img src="./images/Company Register and Login2.jpg" >
-                        <img src="./images/User Book Ticket Booking.jpg" >
-                        <img src="./images/User Book Ticket Booking2.jpg" >
-                        <img src="./images/Admin Login.jpg" >
-                        <img src="./images/Add Buses, Edit and Show Buses.jpg" >  
+                        <img src="./images/Welcome page (2).jpeg" >
+                        <img src="./images/Choose Login.jpeg" >
+                        <img src="./images/Admin Register.jpeg" >
+                        <img src="./images/Company Register and Login2.jpeg" >
+                        <img src="./images/User Book Ticket Booking.jpeg" >
+                        <img src="./images/User Book Ticket Booking2.jpeg" >
+                        <img src="./images/Admin Login.jpeg" >
+                        <img src="./images/Add Buses, Edit and Show Buses.jpeg" >  
                     </div>
                 `;
             }            
