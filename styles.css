@@ -79,7 +79,116 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Leadership & Contact sections */
+/* Skills */
+.skills {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: scroll 15s linear infinite;
+    padding: 20px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.skills div {
+    display: inline-block;
+    margin: 0 30px; /* Increased gap between skills */
+    font-size: 1.2em;
+}
+
+/* Projects */
+.project {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    color: #6a11cb;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animations */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.animated {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animated.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Modal Images */
+#modalImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#modalImages img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px; /* Space between images */
+    border-radius: 5px;
+}
+
 .animated-title {
     text-align: center;
     color: #333;
@@ -122,72 +231,19 @@ h2 {
     }
 }
 
-/* Modal styles */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding-top: 60px;
-}
-
-.modal-content {
-    background-color: #fff;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Modal Images */
-#modalImages {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-#modalImages img {
-    max-width: 100%;
-    height: auto;
-    margin: 5px; /* Space between images */
-    border-radius: 5px;
-}
-
-/* Skills */
-.skills {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: scroll 15s linear infinite;
-    padding: 20px 0;
-    background-color: #fff;
+/* Footer styles */
+footer {
+    background-color: #6a11cb; /* Matching header gradient color */
+    color: #fff;
     text-align: center;
+    padding: 20px 0;
+    position: relative; /* Ensure proper stacking */
+    bottom: 0;
+    width: 100%;
 }
 
-.skills div {
-    display: inline-block;
-    margin: 0 30px; /* Increased gap between skills */
-    font-size: 1.2em;
+footer p {
+    margin: 0;
+    font-size: 1.2em; /* Slightly larger font size */
+    opacity: 0.8; /* Slight transparency for a softer look */
 }
