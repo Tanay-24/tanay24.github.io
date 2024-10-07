@@ -18,10 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p>The Asa No Nettowaku application is an advanced and informative tool helping users stay updated with news and articles from around the world. Users can change the app's theme and switch languages (Marathi, English, Japanese, Hindi, Gujarati, Malayalam).</p>
                     <div id="modalImages">
                         <img src="./images/Welcome Page.jpg" alt="Welcome Page">
-                        <img src="./images/Registration.jpg" alt="Registration">
-                        <img src="./images/News Interface.jpg" alt="News Interface">
-                         <img src="./images/Marathi Language Interface.jpg" alt="Marathi Language Interface">
-                        <img src="./images/Light Theme Interface.jpg" alt="Light Theme Interface">
+                        <img src="file:///F:/Tanay HDD/Mi D disk/My work/TYCS/Sem5 Project/registration.jpg" alt="Registration">
+                        <img src="file:///F:/Tanay HDD/Mi D disk/My work/TYCS/Sem5 Project/News Interface.jpg" alt="News Interface">
+                        <img src="file:///F:/Tanay HDD/Mi D disk/My work/TYCS/Sem5 Project/Marathi Language Interface.jpg" alt="Marathi Language Interface">
+                        <img src="file:///F:/Tanay HDD/Mi D disk/My work/TYCS/Sem5 Project/Light Theme Interface.jpg" alt="Light Theme Interface">
                     </div>
                 `;
             } else if (projectName === "FleetFusion") {
@@ -72,4 +72,4 @@ document.addEventListener("DOMContentLoaded", function () {
             modal.style.display = "none"; // Hide the modal
         }
     });
-});
+});v
