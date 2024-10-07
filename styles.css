@@ -79,38 +79,47 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Skills */
-.skills {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: scroll 15s linear infinite;
-    padding: 20px 0;
-    background-color: #fff;
+/* Leadership & Contact sections */
+.animated-title {
     text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5em; /* Larger font size */
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 0.8s forwards; /* Animation for the title */
 }
 
-.skills div {
-    display: inline-block;
-    margin: 0 30px; /* Increased gap between skills */
-    font-size: 1.2em;
+.animated-list {
+    opacity: 0;
+    animation: fadeInUp 1s forwards; /* Animation for the list */
+    animation-delay: 0.5s; /* Delay for the list */
 }
 
-/* Projects */
-.project {
-    background: #fff;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+.animated-list li {
+    margin: 10px 0;
+    font-size: 1.5em; /* Larger font size for list items */
+    opacity: 0;
+    transform: translateY(10px);
+    animation: slideIn 0.5s forwards; /* Individual animation for each list item */
 }
 
-.project:hover {
-    transform: translateY(-5px);
+.animated-list li:nth-child(1) { animation-delay: 1.2s; }
+.animated-list li:nth-child(2) { animation-delay: 1.4s; }
+.animated-list li:nth-child(3) { animation-delay: 1.6s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.project h3 {
-    color: #6a11cb;
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Modal styles */
@@ -152,16 +161,6 @@ h2 {
     cursor: pointer;
 }
 
-/* Animations */
-@keyframes scroll {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
 /* Modal Images */
 #modalImages {
     display: flex;
@@ -177,44 +176,18 @@ h2 {
     border-radius: 5px;
 }
 
-.animated-title {
+/* Skills */
+.skills {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: scroll 15s linear infinite;
+    padding: 20px 0;
+    background-color: #fff;
     text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-    font-size: 2.5em; /* Larger font size */
-    opacity: 0;
-    transform: translateY(-20px);
-    animation: fadeInUp 0.8s forwards; /* Animation for the title */
 }
 
-.animated-list {
-    opacity: 0;
-    animation: fadeInUp 1s forwards; /* Animation for the list */
-    animation-delay: 0.5s; /* Delay for the list */
-}
-
-.animated-list li {
-    margin: 10px 0;
-    font-size: 1.5em; /* Larger font size for list items */
-    opacity: 0;
-    transform: translateY(10px);
-    animation: slideIn 0.5s forwards; /* Individual animation for each list item */
-}
-
-.animated-list li:nth-child(1) { animation-delay: 1.2s; }
-.animated-list li:nth-child(2) { animation-delay: 1.4s; }
-.animated-list li:nth-child(3) { animation-delay: 1.6s; }
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.skills div {
+    display: inline-block;
+    margin: 0 30px; /* Increased gap between skills */
+    font-size: 1.2em;
 }
