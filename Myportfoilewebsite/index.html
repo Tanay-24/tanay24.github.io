@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanay Puranik | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="profile-container">
+                <img src="./images/latest photo 2.jpeg" alt="Tanay Puranik" class="profile-photo">
+            </div>
+            <h1>Tanay Puranik</h1>
+            <p>MCA (Engg.) - Aspiring Full Stack and Android Developer</p>
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn">Contact Me</a>
+            <a href="./Resume3Final.pdf" class="btn" download>Download CV</a>
+        </div>
+    </header>
+       
+
+    <section id="summary">
+        <div class="container">
+            <h2>Summary</h2>
+            <p>To become a full stack developer and Android developer with strong leadership and project management skills, while creating opportunities for others. 
+            I aim to settle in Japan in the coming years and am currently learning the N5 language.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <ul>
+                <li>Swami Vivekanand Vidyamandir School, Dombivli | 10th | 74.20%</li>
+                <li>Satish Pradhan Dnyanasadhana College, Thane | 12th in Computer Science, 2020 | 56.76%</li>
+                <li>Satish Pradhan Dnyanasadhana College, Thane | Bachelor in Computer Science, 2023 | CGPI 8.82</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+
+            <div class="project" data-modal="ournewsModal">
+                <h3>OurNews</h3>
+                <p>An advanced mobile application helping users stay informed about news and articles from around the
+                    world.</p>
+                <p><strong>Technologies Used:</strong> Java, XML, Firebase</p>
+                <p><strong>Duration:</strong> Aug 2022 – Nov 2022</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+
+            <div class="project" data-modal="fleetfusionModal">
+                <h3>FleetFusion</h3>
+                <p>A web application aimed at improving operational efficiency and customer satisfaction for logistics
+                    providers.</p>
+                <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, MySQL</p>
+                <p><strong>Duration:</strong> Jan 2023 – May 2023</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+
+            <div class="project" data-modal="smartcityModal">
+                <h3>Smart City Hub - Nashik</h3>
+                <p>A research-based mobile app designed to enhance urban living.</p>
+                <p><strong>Technologies Used:</strong> Java, XML, Firebase</p>
+                <p><strong>Duration:</strong> July 2024 – Present</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+
+            <div class="project" data-modal="oneplatformModal">
+                <h3>One Platform Transport Services</h3>
+                <p>A Windows application offering an efficient ticket booking system for public transport.</p>
+                <p><strong>Technologies Used:</strong> C#, MySQL, XAMPP</p>
+                <p><strong>Duration:</strong> Jan 2023 – Apr 2023</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <div>Python (Django)</div>
+                <div>Java</div>
+                <div>JavaScript (React)</div>
+                <div>HTML5</div>
+                <div>CSS3</div>
+                <div>Git & GitHub</div>
+                <div>MySQL</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="leadership">
+        <div class="container">
+            <h2 class="animated-title">Leadership & Management Skills</h2>
+            <ul class="animated-list">
+                <li>Team Leadership</li>
+                <li>Project Management (Agile)</li>
+                <li>Project Planning and Scheduling</li>
+                <li>Time Management</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h2 class="animated-title">Contact Me</h2>
+            <p>Phone: 8928910668</p>
+            <p>Email: <a href="mailto:tanay.puranik2002@gmail.com">tanay.puranik2002@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/tanaypuranik-7451931b7" target="_blank">LinkedIn Profile</a></p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tanay Puranik. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <!-- Modal Structure -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
