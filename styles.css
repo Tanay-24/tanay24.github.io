@@ -95,6 +95,25 @@ h2 {
     font-size: 1.2em;
 }
 
+/* Responsive Skills Section for Mobile */
+@media (max-width: 600px) {
+    .skills {
+        overflow: visible; /* Ensure overflow is visible on mobile */
+        white-space: normal; /* Allow wrapping of skills */
+        display: flex; /* Use flexbox for layout */
+        flex-wrap: wrap; /* Allow items to wrap */
+        justify-content: center; /* Center the items */
+    }
+
+    .skills div {
+        display: block; /* Change to block for stacking */
+        margin: 10px 0; /* Adjust margin for spacing */
+        font-size: 1em; /* Adjust font size if necessary */
+        flex: 1 1 40%; /* Make each skill take up to 40% of the width */
+        max-width: 150px; /* Set a maximum width for each skill */
+    }
+}
+
 /* Projects */
 .project {
     background: #fff;
