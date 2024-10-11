@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (projectName === "Smart City Hub - Nashik") {
                 content = `
                     <h2>Smart City Hub - Nashik</h2>
-                    <p><strong>Duration:</strong> July 2024 - Present</p>
+                    <p><strong>Duration:</strong> July 2024 - Oct 2024</p>
                     <p>This research-based mobile app is developed using Java and XML with Firebase for data storage. It aims to enhance urban living by providing real-time information, optimizing city services, and promoting citizen engagement through a user-friendly interface accessible on smartphones and tablets.</p>
                     <div id="modalImages">
                         <img src="./images/Welcome page 3.jpg">
@@ -97,7 +97,20 @@ document.addEventListener("DOMContentLoaded", function () {
                         <img src="./images/Add Buses, Edit and Show Buses.jpeg" >  
                     </div>
                 `;
-            }            
+            } 
+            
+            else if (projectName === "Weather Website") {
+                content = `
+                    <h2>Weather Website</h2>
+                    <p><strong>Duration:</strong> Oct 2022 - Oct 2022</p>
+                    <p>I have completed a comprehensive weather project that includes features such as displaying humidity, wind speed, and forecasts for different locations. The project also integrates a location search functionality, allowing users to easily retrieve weather information for specific areas.</p>
+                    <div id="modalImages">
+                        <img src="./images/Wether Current Location (1).jpeg" >
+                        <img src="./images/Wether Current Location (2).jpeg" >
+                        <img src="./images/Wether Current Location (3).jpeg" >
+                    </div>
+                `;
+            } 
 
             modalContent.innerHTML = content;
             modal.style.display = "block"; // Show the modal
