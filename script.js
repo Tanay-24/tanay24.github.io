@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(section); // Start observing the section
     });
 
-    // Modal functionality
+    // Modal functionality for projects
     const modal = document.getElementById("projectModal");
     const modalContent = document.getElementById("modalContent");
     const closeModal = document.querySelector(".close");
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (projectName === "FleetFusion") {
                 content = `
                     <h2>FleetFusion</h2>
-                    <p><strong>Duration:</strong> Jan 2024 - May 2024</p>
+                    <p><strong>Duration:</strong> Jan 2023 - May 2023</p>
                     <p><strong>Associated with:</strong> Savitribai Phule Pune University</p>
                     <p>This web application, built using HTML, CSS, and JavaScript with MySQL for data storage, aims to improve operational efficiency, reduce costs, and enhance customer satisfaction for businesses and logistics providers. By automating vehicle management, order processing, and notifications, it addresses the inefficiencies of manual documentation and record-keeping.</p>
                     <div id="modalImages">
@@ -75,10 +75,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div id="modalImages">
                         <img src="./images/Welcome page 3.jpg">
                         <img src="./images/Main City Selection page.jpg">
-                        <img src="./images/Places.jpg" >
-                        <img src="./images/Place Information.jpg" >
-                        <img src="./images/Sort places.jpg" >
-                        <img src="./images/Mapping.jpg" >
+                        <img src="./images/Places.jpg">
+                        <img src="./images/Place Information.jpg">
+                        <img src="./images/Sort places.jpg">
+                        <img src="./images/Mapping.jpg">
                     </div>
                 `;
             } else if (projectName === "One Platform Transport Services") {
@@ -87,30 +87,28 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p><strong>Duration:</strong> Jan 2023 - Apr 2023</p>
                     <p>Developed as a Windows application, this efficient ticket booking system allows users to view train, bus, and flight timetables and book tickets easily. It features a user-friendly interface that simplifies the booking process, while travel and transport company admins can register their companies with ease.</p>
                     <div id="modalImages">
-                        <img src="./images/Welcome page (2).jpeg" >
-                        <img src="./images/Choose Login.jpeg" >
-                        <img src="./images/Admin Register.jpeg" >
-                        <img src="./images/Company Register and Login2.jpeg" >
-                        <img src="./images/User Book Ticket Booking.jpeg" >
-                        <img src="./images/User Book Ticket Booking2.jpeg" >
-                        <img src="./images/Admin Login.jpeg" >
-                        <img src="./images/Add Buses, Edit and Show Buses.jpeg" >  
+                        <img src="./images/Welcome page (2).jpeg">
+                        <img src="./images/Choose Login.jpeg">
+                        <img src="./images/Admin Register.jpeg">
+                        <img src="./images/Company Register and Login2.jpeg">
+                        <img src="./images/User Book Ticket Booking.jpeg">
+                        <img src="./images/User Book Ticket Booking2.jpeg">
+                        <img src="./images/Admin Login.jpeg">
+                        <img src="./images/Add Buses, Edit and Show Buses.jpeg">
                     </div>
                 `;
-            } 
-            
-            else if (projectName === "Weather Website") {
+            } else if (projectName === "Weather Website") {
                 content = `
                     <h2>Weather Website</h2>
                     <p><strong>Duration:</strong> Oct 2022 - Oct 2022</p>
                     <p>I have completed a comprehensive weather project that includes features such as displaying humidity, wind speed, and forecasts for different locations. The project also integrates a location search functionality, allowing users to easily retrieve weather information for specific areas.</p>
                     <div id="modalImages">
-                        <img src="./images/Wether Current Location (1).jpeg" >
-                        <img src="./images/Wether Current Location (2).jpeg" >
-                        <img src="./images/Wether Current Location (3).jpeg" >
+                        <img src="./images/Wether Current Location (1).jpeg">
+                        <img src="./images/Wether Current Location (2).jpeg">
+                        <img src="./images/Wether Current Location (3).jpeg">
                     </div>
                 `;
-            } 
+            }
 
             modalContent.innerHTML = content;
             modal.style.display = "block"; // Show the modal
@@ -156,4 +154,49 @@ document.addEventListener("DOMContentLoaded", function () {
     // Observe the sections for smooth scroll
     scrollObserver.observe(leadershipSection);
     scrollObserver.observe(contactSection);
+
+    // Modal functionality for certificates
+    const certModal = document.createElement('div');
+    certModal.classList.add('modal');
+
+    const certModalContent = document.createElement('img');
+    certModalContent.classList.add('modal-content');
+    certModal.appendChild(certModalContent);
+    document.body.appendChild(certModal);
+
+    // Get all certificate images
+    const certificateImages = document.querySelectorAll('.certificate-image');
+
+    // Loop through each image and add click event
+    certificateImages.forEach((img) => {
+        img.addEventListener('click', () => {
+            // Set the modal content to the clicked image
+            certModalContent.src = img.src;
+            certModal.style.display = 'block'; // Show the modal
+        });
+    });
+
+    // Close certificate modal when the user clicks on it
+    certModal.addEventListener('click', () => {
+        certModal.style.display = 'none'; // Hide the modal
+    });
+
+    // Optional: Close certificate modal when pressing the 'Esc' key
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            certModal.style.display = 'none'; // Hide the modal
+        }
+    });
+
+    // Horizontal auto-scroll for technical skills
+    const skillsContainer = document.querySelector('.skills-container');
+    const skills = document.querySelector('.skills');
+
+    skillsContainer.addEventListener('mouseenter', () => {
+        skills.style.animationPlayState = 'paused'; // Pause on hover
+    });
+
+    skillsContainer.addEventListener('mouseleave', () => {
+        skills.style.animationPlayState = 'running'; // Resume on mouse leave
+    });
 });

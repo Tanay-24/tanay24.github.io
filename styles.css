@@ -32,14 +32,16 @@ header {
 }
 
 .profile-photo {
-    width: 150px; /* Adjust size as needed */
-    height: 150px; /* Adjust size as needed */
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
     border-radius: 50%; /* Circular image */
     margin-right: 20px; /* Space between the image and text */
 }
 
 header h1 {
-    margin: 0;
+    text-align: center; /* Center the name */
+    width: 100%; /* Ensure it takes full width for proper centering */
+    margin-top: 20px; /* Add some space above the name */
     font-size: 3em;
 }
 
@@ -79,38 +81,143 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Certificates*/
+#certificate {
+    display: flex;
+    flex-direction: row; /* Stack heading and certificates vertically */
+    align-items: center; /* Center the heading */
+    padding: 20px;
+    background-color: #f5f5f5; /* Light background color */
+}
+
+h2 {
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center the heading */
+}
+
+.certificate-container {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-direction: column; /* Stack content vertically within each certificate */
+    background: white; /* White background for the certificate */
+    border: 2px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding around the content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 300px; /* Maximum width for each certificate */
+    text-align: center; /* Center the text */
+    margin: 10px; /* Space between certificates */
+    flex: 1; /* Allow certificates to grow */
+    min-width: 250px; /* Minimum width for each certificate */
+}
+
+.certificate-container {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-direction: column; /* Stack content vertically within each certificate */
+    background: white; /* White background for the certificate */
+    border: 2px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding around the content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 300px; /* Maximum width for each certificate */
+    text-align: center; /* Center the text */
+    margin: 10px; /* Space between certificates */
+    flex: 1; /* Allow certificates to grow */
+    min-width: 250px; /* Minimum width for each certificate */
+}
+
+#certificate {
+    display: flex;
+    flex-direction: row; /* Arrange certificates in a row */
+    justify-content: center; /* Center certificates horizontally */
+    flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+}
+
+.certificate-image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Space above the image */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+p {
+    margin: 5px 0; /* Space around paragraphs */
+}
+
+.highlight {
+    font-weight: bold; /* Highlight text by making it bold */
+    color: #d9534f; /* Optional: change color to make it stand out */
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
+}
+
+.modal-content {
+    margin: auto; /* Center the modal content */
+    display: block;
+    width: 95%; /* Make it wider */
+    height: auto; /* Auto height to maintain aspect ratio */
+    max-width: 1200px; /* Increase max width for larger images */
+    max-height: 90%; /* Limit height for large images */
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Additional styles for responsive images */
+@media (max-width: 600px) {
+    .modal-content {
+        width: 98%; /* Slightly wider for small screens */
+        max-width: none; /* Remove max width for small devices */
+    }
+}
+s
+
 /* Skills */
-.skills {
+.skills-container {
     overflow: hidden;
     white-space: nowrap;
-    animation: scroll 15s linear infinite;
-    padding: 20px 0;
-    background-color: #fff;
-    text-align: center;
+    width: 100%; /* Adjust based on your layout */
+    position: relative;
+}
+
+.skills {
+    display: inline-block;
+    animation: scroll 10s linear infinite; /* Adjust duration for speed */
 }
 
 .skills div {
     display: inline-block;
-    margin: 0 30px; /* Increased gap between skills */
-    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #f0f0f0; /* Change background color as needed */
+    margin-right: 15px; /* Space between skills */
+    border-radius: 5px;
+    font-size: 1.2em; /* Adjust font size as needed */
 }
 
-/* Responsive Skills Section for Mobile */
-@media (max-width: 600px) {
-    .skills {
-        overflow: visible; /* Ensure overflow is visible on mobile */
-        white-space: normal; /* Allow wrapping of skills */
-        display: flex; /* Use flexbox for layout */
-        flex-wrap: wrap; /* Allow items to wrap */
-        justify-content: center; /* Center the items */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%); /* Start from the right */
     }
-
-    .skills div {
-        display: block; /* Change to block for stacking */
-        margin: 10px 0; /* Adjust margin for spacing */
-        font-size: 1em; /* Adjust font size if necessary */
-        flex: 1 1 40%; /* Make each skill take up to 40% of the width */
-        max-width: 150px; /* Set a maximum width for each skill */
+    100% {
+        transform: translateX(-100%); /* End on the left */
     }
 }
 
@@ -191,7 +298,6 @@ h2 {
     opacity: 1;
     transform: translateY(0);
 }
-
 
 /* Modal Images */
 #modalImages {
