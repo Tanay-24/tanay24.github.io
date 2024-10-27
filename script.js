@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (projectName === "FleetFusion") {
                 content = `
                     <h2>FleetFusion</h2>
-                    <p><strong>Duration:</strong> Jan 2023 - May 2023</p>
+                    <p><strong>Duration:</strong> Jan 2024 - May 2024</p>
                     <p><strong>Associated with:</strong> Savitribai Phule Pune University</p>
                     <p>This web application, built using HTML, CSS, and JavaScript with MySQL for data storage, aims to improve operational efficiency, reduce costs, and enhance customer satisfaction for businesses and logistics providers. By automating vehicle management, order processing, and notifications, it addresses the inefficiencies of manual documentation and record-keeping.</p>
                     <div id="modalImages">
