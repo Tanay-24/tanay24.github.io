@@ -116,12 +116,12 @@ document.addEventListener("DOMContentLoaded", function () {
 predefined set of clothing images. The system bridges the gap between fashion technology and user-friendly styling tools by
 offering an image-based, culturally aware, and interactive solution.</p>
                     <div id="modalImages">
-                        <img src="./images/Home Page-Outfit.jpg">
-                        <img src="./images/Home Page Footer-Outfit.jpg">
-                        <img src="./images/Sigup or Signin-Outfit.jpg">
-                        <img src="./images/Home Page Cloth Suggestion-Outfit.jpg">
-                        <img src="./images/Home Page Cloth-Outfit.jpg">
-                        <img src="./images/Feedback-Outfit.jpg">
+                        <img src="./images/Home Page-Outfit.png">
+                        <img src="./images/Home Page Footer-Outfit.png">
+                        <img src="./images/Sigup or Signin-Outfit.png">
+                        <img src="./images/Home Page Cloth Suggestion-Outfit.png">
+                        <img src="./images/Home Page Cloth-Outfit.png">
+                        <img src="./images/Feedback-Outfit.png">
                     </div>
                 `;
             } else if (projectName === "Manual Testing – Parabank Website") {
@@ -232,5 +232,6 @@ offering an image-based, culturally aware, and interactive solution.</p>
         skills.style.animationPlayState = 'running'; // Resume on mouse leave
     });
 });
+
 
 
