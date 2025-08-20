@@ -132,12 +132,8 @@ offering an image-based, culturally aware, and interactive solution.</p>
 predefined set of clothing images. The system bridges the gap between fashion technology and user-friendly styling tools by
 offering an image-based, culturally aware, and interactive solution.</p>
                     <div id="modalImages">
-                        <img src="./images/Home Page-Outfit.png">
-                        <img src="./images/Home Page Footer-Outfit.png">
-                        <img src="./images/Sigup or Signin-Outfit.png">
-                        <img src="./images/Home Page Cloth Suggestion-Outfit.png">
-                        <img src="./images/Home Page Cloth-Outfit.png">
-                        <img src="./images/Feedback-Outfit.png">
+                        <img src="./images/JIRA for tracking.png">
+                        <img src="./images/Final Test Summary Report.pdf">
                     </div>
                 `;
             }
@@ -232,6 +228,7 @@ offering an image-based, culturally aware, and interactive solution.</p>
         skills.style.animationPlayState = 'running'; // Resume on mouse leave
     });
 });
+
 
 
 
