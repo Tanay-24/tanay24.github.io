@@ -108,6 +108,38 @@ document.addEventListener("DOMContentLoaded", function () {
                         <img src="./images/Wether Current Location (3).jpeg">
                     </div>
                 `;
+            } else if (projectName === "OutfitXpert") {
+                content = `
+                    <h2>OutfitXpert</h2>
+                    <p><strong>Duration:</strong> Jan 2025 - Jun 2095</p>
+                    <p>The AI-Powered Fashion Styling System addresses these challenges by providing a webbased platform where users can visually generate outfit combinations by selecting from a
+predefined set of clothing images. The system bridges the gap between fashion technology and user-friendly styling tools by
+offering an image-based, culturally aware, and interactive solution.</p>
+                    <div id="modalImages">
+                        <img src="./images/Home Page-Outfit.png">
+                        <img src="./images/Home Page Footer-Outfit.png">
+                        <img src="./images/Sigup or Signin-Outfit.png">
+                        <img src="./images/Home Page Cloth Suggestion-Outfit.png">
+                        <img src="./images/Home Page Cloth-Outfit.png">
+                        <img src="./images/Feedback-Outfit.png">
+                    </div>
+                `;
+            } else if (projectName === "Manual Testing – Parabank Website") {
+                content = `
+                    <h2>OutfitXpert</h2>
+                    <p><strong>Duration:</strong> Jun 2025 - Jun 2095</p>
+                    <p>The AI-Powered Fashion Styling System addresses these challenges by providing a webbased platform where users can visually generate outfit combinations by selecting from a
+predefined set of clothing images. The system bridges the gap between fashion technology and user-friendly styling tools by
+offering an image-based, culturally aware, and interactive solution.</p>
+                    <div id="modalImages">
+                        <img src="./images/Home Page-Outfit.png">
+                        <img src="./images/Home Page Footer-Outfit.png">
+                        <img src="./images/Sigup or Signin-Outfit.png">
+                        <img src="./images/Home Page Cloth Suggestion-Outfit.png">
+                        <img src="./images/Home Page Cloth-Outfit.png">
+                        <img src="./images/Feedback-Outfit.png">
+                    </div>
+                `;
             }
 
             modalContent.innerHTML = content;
@@ -200,3 +232,4 @@ document.addEventListener("DOMContentLoaded", function () {
         skills.style.animationPlayState = 'running'; // Resume on mouse leave
     });
 });
+
