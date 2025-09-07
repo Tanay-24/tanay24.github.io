@@ -20,11 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(section); // Start observing the section
     });
 
-    // Modal functionality for projects
-    const modal = document.getElementById("projectModal");
-    const modalContent = document.getElementById("modalContent");
-    const closeModal = document.querySelector(".close");
-
     // Inline card functionality for projects (instead of modal)
     document.querySelectorAll('.project').forEach(project => {
         project.querySelector('.btn').addEventListener('click', function (e) {
@@ -35,111 +30,121 @@ document.addEventListener("DOMContentLoaded", function () {
             // Define project content
             if (projectName === "OurNews") {
                 content = `
-                    <h2>Our News / Asa No Nettowaku</h2>
-                    <p><strong>Duration:</strong> Aug 2022 - Nov 2022</p>
-                    <p><strong>Associated with:</strong> University of Mumbai</p>
-                    <p>This advanced mobile application, developed in Java and XML with Firebase for data storage, helps users stay informed about news, articles, and interesting events around the world. Users can customize the app's theme and switch between multiple languages, including Marathi, English, Japanese, Hindi, Gujarati, and Malayalam.</p>
-                    <div id="modalImages">
-                        <img src="./images/Welcome Page.jpeg" alt="Welcome Page">
-                        <img src="./images/Registration.jpeg" alt="Registration">
-                        <img src="./images/News Interface.jpeg" alt="News Interface">
-                        <img src="./images/Marathi Language Interface.jpeg" alt="Marathi Language Interface">
-                        <img src="./images/Light Theme Interface.jpeg" alt="Light Theme Interface">
+                    <div class="project-card">
+                        <h2>Our News / Asa No Nettowaku</h2>
+                        <p><strong>Duration:</strong> Aug 2022 - Nov 2022</p>
+                        <p><strong>Associated with:</strong> University of Mumbai</p>
+                        <p>This advanced mobile application, developed in Java and XML with Firebase for data storage, helps users stay informed about news, articles, and interesting events around the world. Users can customize the app's theme and switch between multiple languages, including Marathi, English, Japanese, Hindi, Gujarati, and Malayalam.</p>
+                        <div class="project-images">
+                            <img src="./images/Welcome Page.jpeg" alt="Welcome Page">
+                            <img src="./images/Registration.jpeg" alt="Registration">
+                            <img src="./images/News Interface.jpeg" alt="News Interface">
+                            <img src="./images/Marathi Language Interface.jpeg" alt="Marathi Language Interface">
+                            <img src="./images/Light Theme Interface.jpeg" alt="Light Theme Interface">
+                        </div>
                     </div>
                 `;
             } else if (projectName === "FleetFusion") {
                 content = `
-                    <h2>FleetFusion</h2>
-                    <p><strong>Duration:</strong> Jan 2024 - May 2024</p>
-                    <p><strong>Associated with:</strong> Savitribai Phule Pune University</p>
-                    <p>This web application, built using HTML, CSS, and JavaScript with MySQL for data storage, aims to improve operational efficiency, reduce costs, and enhance customer satisfaction for businesses and logistics providers. By automating vehicle management, order processing, and notifications, it addresses the inefficiencies of manual documentation and record-keeping.</p>
-                    <div id="modalImages">
-                        <img src="./images/1 imp.jpeg">
-                        <img src="./images/2.jpeg">
-                        <img src="./images/Provider Login imp.jpeg">
-                        <img src="./images/4.jpeg">
-                        <img src="./images/4A.jpeg">
-                        <img src="./images/6B imp.jpeg">
-                        <img src="./images/User Login imp.jpeg">
-                        <img src="./images/8.jpeg">
-                        <img src="./images/8A.jpeg">
-                        <img src="./images/8B.jpeg">
-                        <img src="./images/8C.jpeg">
-                        <img src="./images/8D.jpeg">
+                    <div class="project-card">
+                        <h2>FleetFusion</h2>
+                        <p><strong>Duration:</strong> Jan 2024 - May 2024</p>
+                        <p><strong>Associated with:</strong> Savitribai Phule Pune University</p>
+                        <p>This web application, built using HTML, CSS, and JavaScript with MySQL for data storage, aims to improve operational efficiency, reduce costs, and enhance customer satisfaction for businesses and logistics providers. By automating vehicle management, order processing, and notifications, it addresses the inefficiencies of manual documentation and record-keeping.</p>
+                        <div class="project-images">
+                            <img src="./images/1 imp.jpeg">
+                            <img src="./images/2.jpeg">
+                            <img src="./images/Provider Login imp.jpeg">
+                            <img src="./images/4.jpeg">
+                            <img src="./images/4A.jpeg">
+                            <img src="./images/6B imp.jpeg">
+                            <img src="./images/User Login imp.jpeg">
+                            <img src="./images/8.jpeg">
+                            <img src="./images/8A.jpeg">
+                            <img src="./images/8B.jpeg">
+                            <img src="./images/8C.jpeg">
+                            <img src="./images/8D.jpeg">
+                        </div>
                     </div>
                 `;
             } else if (projectName === "Smart City Hub - Nashik") {
                 content = `
-                    <h2>Smart City Hub - Nashik</h2>
-                    <p><strong>Duration:</strong> July 2024 - Oct 2024</p>
-                    <p>This research-based mobile app is developed using Java and XML with Firebase for data storage. It aims to enhance urban living by providing real-time information, optimizing city services, and promoting citizen engagement through a user-friendly interface accessible on smartphones and tablets.</p>
-                    <div id="modalImages">
-                        <img src="./images/Welcome page 3.jpg">
-                        <img src="./images/Main City Selection page.jpg">
-                        <img src="./images/Places.jpg">
-                        <img src="./images/Place Information.jpg">
-                        <img src="./images/Sort places.jpg">
-                        <img src="./images/Mapping.jpg">
+                    <div class="project-card">
+                        <h2>Smart City Hub - Nashik</h2>
+                        <p><strong>Duration:</strong> July 2024 - Oct 2024</p>
+                        <p>This research-based mobile app is developed using Java and XML with Firebase for data storage. It aims to enhance urban living by providing real-time information, optimizing city services, and promoting citizen engagement through a user-friendly interface accessible on smartphones and tablets.</p>
+                        <div class="project-images">
+                            <img src="./images/Welcome page 3.jpg">
+                            <img src="./images/Main City Selection page.jpg">
+                            <img src="./images/Places.jpg">
+                            <img src="./images/Place Information.jpg">
+                            <img src="./images/Sort places.jpg">
+                            <img src="./images/Mapping.jpg">
+                        </div>
                     </div>
                 `;
             } else if (projectName === "One Platform Transport Services") {
                 content = `
-                    <h2>One Platform Transport Services</h2>
-                    <p><strong>Duration:</strong> Jan 2023 - Apr 2023</p>
-                    <p>Developed as a Windows application, this efficient ticket booking system allows users to view train, bus, and flight timetables and book tickets easily. It features a user-friendly interface that simplifies the booking process, while travel and transport company admins can register their companies with ease.</p>
-                    <div id="modalImages">
-                        <img src="./images/Welcome page (2).jpeg">
-                        <img src="./images/Choose Login.jpeg">
-                        <img src="./images/Admin Register.jpeg">
-                        <img src="./images/Company Register and Login2.jpeg">
-                        <img src="./images/User Book Ticket Booking.jpeg">
-                        <img src="./images/User Book Ticket Booking2.jpeg">
-                        <img src="./images/Admin Login.jpeg">
-                        <img src="./images/Add Buses, Edit and Show Buses.jpeg">
+                    <div class="project-card">
+                        <h2>One Platform Transport Services</h2>
+                        <p><strong>Duration:</strong> Jan 2023 - Apr 2023</p>
+                        <p>Developed as a Windows application, this efficient ticket booking system allows users to view train, bus, and flight timetables and book tickets easily. It features a user-friendly interface that simplifies the booking process, while travel and transport company admins can register their companies with ease.</p>
+                        <div class="project-images">
+                            <img src="./images/Welcome page (2).jpeg">
+                            <img src="./images/Choose Login.jpeg">
+                            <img src="./images/Admin Register.jpeg">
+                            <img src="./images/Company Register and Login2.jpeg">
+                            <img src="./images/User Book Ticket Booking.jpeg">
+                            <img src="./images/User Book Ticket Booking2.jpeg">
+                            <img src="./images/Admin Login.jpeg">
+                            <img src="./images/Add Buses, Edit and Show Buses.jpeg">
+                        </div>
                     </div>
                 `;
             } else if (projectName === "Weather Website") {
                 content = `
-                    <h2>Weather Website</h2>
-                    <p><strong>Duration:</strong> Oct 2022 - Oct 2022</p>
-                    <p>I have completed a comprehensive weather project that includes features such as displaying humidity, wind speed, and forecasts for different locations. The project also integrates a location search functionality, allowing users to easily retrieve weather information for specific areas.</p>
-                    <div id="modalImages">
-                        <img src="./images/Wether Current Location (1).jpeg">
-                        <img src="./images/Wether Current Location (2).jpeg">
-                        <img src="./images/Wether Current Location (3).jpeg">
+                    <div class="project-card">
+                        <h2>Weather Website</h2>
+                        <p><strong>Duration:</strong> Oct 2022 - Oct 2022</p>
+                        <p>I have completed a comprehensive weather project that includes features such as displaying humidity, wind speed, and forecasts for different locations. The project also integrates a location search functionality, allowing users to easily retrieve weather information for specific areas.</p>
+                        <div class="project-images">
+                            <img src="./images/Wether Current Location (1).jpeg">
+                            <img src="./images/Wether Current Location (2).jpeg">
+                            <img src="./images/Wether Current Location (3).jpeg">
+                        </div>
                     </div>
                 `;
             } else if (projectName === "OutfitXpert") {
                 content = `
-                    <h2>OutfitXpert</h2>
-                    <p><strong>Duration:</strong> Jan 2025 - Jun 2025</p>
-                    <p>The AI-Powered Fashion Styling System addresses these challenges by providing a webbased platform where users can visually generate outfit combinations by selecting from a
-predefined set of clothing images. The system bridges the gap between fashion technology and user-friendly styling tools by
-offering an image-based, culturally aware, and interactive solution.</p>
-                    <div id="modalImages">
-                        <img src="./images/Home Page-Outfit.png">
-                        <img src="./images/Home Page Footer-Outfit.png">
-                        <img src="./images/Sigup or Signin-Outfit.png">
-                        <img src="./images/Home Page Cloth Suggestion-Outfit.png">
-                        <img src="./images/Home Page Cloth-Outfit.png">
-                        <img src="./images/Feedback-Outfit.png">
+                    <div class="project-card">
+                        <h2>OutfitXpert</h2>
+                        <p><strong>Duration:</strong> Jan 2025 - Jun 2025</p>
+                        <p>The AI-Powered Fashion Styling System addresses these challenges by providing a webbased platform where users can visually generate outfit combinations by selecting from a predefined set of clothing images. The system bridges the gap between fashion technology and user-friendly styling tools by offering an image-based, culturally aware, and interactive solution.</p>
+                        <div class="project-images">
+                            <img src="./images/Home Page-Outfit.png">
+                            <img src="./images/Home Page Footer-Outfit.png">
+                            <img src="./images/Sigup or Signin-Outfit.png">
+                            <img src="./images/Home Page Cloth Suggestion-Outfit.png">
+                            <img src="./images/Home Page Cloth-Outfit.png">
+                            <img src="./images/Feedback-Outfit.png">
+                        </div>
                     </div>
                 `;
             } else if (projectName === "Manual Testing – Parabank Website") {
                 content = `
-                    <h2>OutfitXpert</h2>
-                    <p><strong>Duration:</strong> Jun 2025 - Jun 2025</p>
-                    <p>The AI-Powered Fashion Styling System addresses these challenges by providing a webbased platform where users can visually generate outfit combinations by selecting from a
-predefined set of clothing images. The system bridges the gap between fashion technology and user-friendly styling tools by
-offering an image-based, culturally aware, and interactive solution.</p>
-                    <div id="modalImages">
-                        <img src="./images/JIRA for tracking.png">
-                        <img src="./images/Final Test Summary Report.pdf">
+                    <div class="project-card">
+                        <h2>Manual Testing – Parabank Website</h2>
+                        <p><strong>Duration:</strong> Jun 2025 - Jun 2025</p>
+                        <p>This project focused on manual testing practices using the Parabank demo site, with test planning, bug tracking via JIRA, and generating detailed reports including test summary and defect analysis.</p>
+                        <div class="project-images">
+                            <img src="./images/JIRA for tracking.png">
+                            <img src="./images/Final Test Summary Report.pdf">
+                        </div>
                     </div>
                 `;
             }
 
-           // Remove existing card if already open
+            // Remove existing card if already open
             const existingCard = project.querySelector('.project-card');
             if (existingCard) {
                 existingCard.remove();
@@ -147,18 +152,6 @@ offering an image-based, culturally aware, and interactive solution.</p>
                 project.insertAdjacentHTML('beforeend', content);
             }
         });
-    });
-
-    // Close modal
-    closeModal.addEventListener('click', function () {
-        modal.style.display = "none"; // Hide the modal
-    });
-
-    // Close modal when clicking outside of the modal content
-    window.addEventListener('click', function (event) {
-        if (event.target === modal) {
-            modal.style.display = "none"; // Hide the modal
-        }
     });
 
     // Smooth scroll and focus effect
@@ -234,8 +227,3 @@ offering an image-based, culturally aware, and interactive solution.</p>
         skills.style.animationPlayState = 'running'; // Resume on mouse leave
     });
 });
-
-
-
-
-
