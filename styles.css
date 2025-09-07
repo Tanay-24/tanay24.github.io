@@ -127,18 +127,57 @@ h2::after {
     margin-bottom: 12px;
     font-size: 1.6em;
 }
+
+/* Project Card (expanded details inside project) */
 .project-card {
-    margin-top: 15px;
-    padding: 15px;
-    border-radius: 10px;
-    background: #fff;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-top: 18px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #fdfdfd;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    border-left: 5px solid #6a11cb;
     transition: all 0.3s ease;
+    animation: fadeInCard 0.4s ease-in-out;
 }
+
+.project-card h2 {
+    font-size: 1.8em;
+    color: #2575fc;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.project-card p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #444;
+}
+
+.project-card strong {
+    color: #222;
+}
+
+.project-card .project-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+}
+
 .project-card img {
-    max-width: 120px;
-    margin: 5px;
+    max-width: 140px;
     border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.25s ease;
+}
+
+.project-card img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeInCard {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /* Certificates */
@@ -289,4 +328,3 @@ footer p {
     font-size: 1em;
     opacity: 0.9;
 }
-
