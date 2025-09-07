@@ -127,6 +127,19 @@ h2::after {
     margin-bottom: 12px;
     font-size: 1.6em;
 }
+.project-card {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+.project-card img {
+    max-width: 120px;
+    margin: 5px;
+    border-radius: 8px;
+}
 
 /* Certificates */
 #certificate {
@@ -276,3 +289,4 @@ footer p {
     font-size: 1em;
     opacity: 0.9;
 }
+
