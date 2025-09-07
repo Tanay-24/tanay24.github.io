@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const modalContent = document.getElementById("modalContent");
     const closeModal = document.querySelector(".close");
 
+    // Inline card functionality for projects (instead of modal)
     document.querySelectorAll('.project').forEach(project => {
         project.querySelector('.btn').addEventListener('click', function (e) {
             e.preventDefault();
@@ -138,8 +139,13 @@ offering an image-based, culturally aware, and interactive solution.</p>
                 `;
             }
 
-            modalContent.innerHTML = content;
-            modal.style.display = "block"; // Show the modal
+           // Remove existing card if already open
+            const existingCard = project.querySelector('.project-card');
+            if (existingCard) {
+                existingCard.remove();
+            } else {
+                project.insertAdjacentHTML('beforeend', content);
+            }
         });
     });
 
@@ -228,6 +234,7 @@ offering an image-based, culturally aware, and interactive solution.</p>
         skills.style.animationPlayState = 'running'; // Resume on mouse leave
     });
 });
+
 
 
 
